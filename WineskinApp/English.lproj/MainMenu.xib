@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <deployment version="1060" identifier="macosx"/>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -367,7 +367,7 @@ Gw
                     <button focusRingType="none" id="544">
                         <rect key="frame" x="-2" y="-6" width="57" height="173"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="WineskinBanner" imagePosition="overlaps" alignment="center" alternateImage="WineskinBanner" state="on" focusRingType="none" inset="2" id="545">
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="WineskinBanner" imagePosition="only" alignment="center" alternateImage="WineskinBanner" state="on" focusRingType="none" imageScaling="proportionallyDown" inset="2" id="545">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1776,7 +1776,7 @@ DQ
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
-                                <searchField verticalHuggingPriority="750" id="2022">
+                                <searchField wantsLayer="YES" verticalHuggingPriority="750" id="2022">
                                     <rect key="frame" x="18" y="94" width="254" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" refusesFirstResponder="YES" borderStyle="bezel" placeholderString="Filter Engine List" bezelStyle="round" id="2023">
@@ -1863,7 +1863,7 @@ Gw
                             <action selector="winetricksDoneButtonPressed:" target="494" id="1699"/>
                         </connections>
                     </button>
-                    <tabView autoresizesSubviews="NO" type="noTabsBezelBorder" id="1664">
+                    <tabView type="noTabsBezelBorder" id="1664">
                         <rect key="frame" x="13" y="39" width="774" height="654"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <font key="font" metaFont="system"/>
@@ -1871,14 +1871,14 @@ Gw
                             <tabViewItem label="Winetricks" identifier="1" id="1666">
                                 <view key="view" id="1667">
                                     <rect key="frame" x="10" y="7" width="754" height="634"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" id="1670">
                                             <rect key="frame" x="-3" y="298" width="760" height="303"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <clipView key="contentView" id="xLg-9F-6LO">
                                                 <rect key="frame" x="1" y="0.0" width="758" height="302"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" headerView="1677" indentationPerLevel="16" autoresizesOutlineColumn="YES" outlineTableColumn="1683" id="1675">
                                                         <rect key="frame" x="0.0" y="0.0" width="758" height="285"/>
@@ -1969,7 +1969,7 @@ Gw
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableHeaderView>
                                         </scrollView>
-                                        <searchField verticalHuggingPriority="750" id="1668">
+                                        <searchField wantsLayer="YES" verticalHuggingPriority="750" id="1668">
                                             <rect key="frame" x="0.0" y="609" width="754" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Search for packages" bezelStyle="round" id="1690">
@@ -2081,14 +2081,14 @@ DQ
                                             <rect key="frame" x="0.0" y="-3" width="754" height="273"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <clipView key="contentView" copiesOnScroll="NO" id="6iJ-NR-9eg">
-                                                <rect key="frame" x="1" y="1" width="737" height="271"/>
-                                                <autoresizingMask key="autoresizingMask"/>
+                                                <rect key="frame" x="1" y="1" width="752" height="271"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <textView focusRingType="none" editable="NO" importsGraphics="NO" verticallyResizable="YES" allowsNonContiguousLayout="YES" id="1695">
                                                         <rect key="frame" x="0.0" y="0.0" width="752" height="271"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <size key="minSize" width="737" height="271"/>
+                                                        <size key="minSize" width="752" height="271"/>
                                                         <size key="maxSize" width="761" height="10000000"/>
                                                         <color key="insertionPointColor" red="0.27450981740000002" green="0.23529411850000001" blue="0.23529411850000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     </textView>
@@ -2100,7 +2100,7 @@ DQ
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="1693">
-                                                <rect key="frame" x="738" y="1" width="15" height="271"/>
+                                                <rect key="frame" x="737" y="1" width="16" height="271"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                         </scrollView>
@@ -2598,7 +2598,7 @@ Gw
                         <autoresizingMask key="autoresizingMask"/>
                         <clipView key="contentView" id="6bh-ZF-v5b">
                             <rect key="frame" x="1" y="1" width="260" height="69"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" smartInsertDelete="YES" id="1358">
                                     <rect key="frame" x="0.0" y="0.0" width="260" height="69"/>
@@ -2797,7 +2797,7 @@ Gw
                         <autoresizingMask key="autoresizingMask"/>
                         <clipView key="contentView" id="ig0-LL-WRa">
                             <rect key="frame" x="1" y="1" width="161" height="135"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView editable="NO" importsGraphics="NO" verticallyResizable="YES" usesFontPanel="YES" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" smartInsertDelete="YES" id="1374" propertyAccessControl="none">
                                     <rect key="frame" x="0.0" y="0.0" width="161" height="135"/>
@@ -3352,6 +3352,6 @@ Gw
         <image name="NSRemoveTemplate" width="11" height="11"/>
         <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
         <image name="Wineskin" width="256" height="256"/>
-        <image name="WineskinBanner" width="167" height="53"/>
+        <image name="WineskinBanner" width="53" height="167"/>
     </resources>
 </document>

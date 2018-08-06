@@ -39,7 +39,7 @@ NSString* IconPath = @"";
     NSArray *fileArray = [paste propertyListForType:@"NSFilenamesPboardType"];
     
     IconPath = [[fileArray firstObject] copy];
-    if (!IconPath) IconPath = [NSString stringWithFormat:@"%@",[NSURL URLFromPasteboard:paste]];
+    if (!IconPath) IconPath = [NSURL URLFromPasteboard:paste].absoluteString;
     
     return YES;
 }
